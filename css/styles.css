@@ -9,13 +9,14 @@
     --body-text-color: #a195c3;
 }
 
+/* Typography: */
 html {
     font-size: 62.5%;
 }
 
 
 body {
-    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
     line-height: 1.5;
     font-size: 2.4rem; /* 2.4rem -> 24px */
     color: var(--body-text-color);
@@ -33,12 +34,34 @@ h3 {font-size: 3rem;} /* 3rem -> 30px */
 p {
     margin-top: 0;
 }
-
+/* Desktop typography */
 @media screen and (min-width: 1024px ) {
 body { font-size: 1.8rem;}
 h1 {font-size: 8rem;} /* 7rem -> 70px */
 h2 {font-size: 4rem;} /* 4rem -> 40px */
 h3 {font-size: 2.4rem;} /* 3rem -> 30px */
+}
 
+/* Links */
 
+a {
+    text-decoration: none;
+    color: inherit; /*Inherits the color from the body element*/
+}
+
+.fa-arrow-right,.link-arrow {color: var(--accent-color);}
+
+.link-arrow{
+    font-size: 2rem;
+    font-weight:bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.fa-arrow-right {transition: margin-left 0.2s;} /*Transition for the animation below*/
+
+.learn-more:hover .fa-arrow-right {margin-left: 1rem;} /* The last state of the animation*/
+
+@media screen and (min-width: 1024px ) {
+.link-arrow {font-size: 1.5rem;}
 }

@@ -42,7 +42,7 @@ h2 {font-size: 4rem;} /* 4rem -> 40px */
 h3 {font-size: 2.4rem;} /* 3rem -> 30px */
 }
 
-/* Links */
+/* Links (Learn More link) */
 
 a {
     text-decoration: none;
@@ -64,4 +64,31 @@ a {
 
 @media screen and (min-width: 1024px ) {
 .link-arrow {font-size: 1.5rem;}
+}
+
+/* Badges */
+.badge {
+    border-radius: 100px;
+    color: #ffff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 0.5rem 1.7rem 0.5rem 1.7rem;
+    white-space: nowrap;
+}
+
+.badge--big {
+    font-size: 2rem;
+    background-color: var(--secondary-color);
+}
+
+.badge--primary {
+    background-color: #116de4;
+}
+.badge--secondary {
+    background-color: #01cdf1;
+}
+
+@media screen and (min-width: 1024px ) {
+    .badge {font-size: 1.2rem;}
+    .badge--big {font-size: 1.5rem;}
 }

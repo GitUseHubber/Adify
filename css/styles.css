@@ -138,12 +138,15 @@ a {
 
 .icon 
 {
-    width: 40px; height: 40px;
+    width: 30px; height: 30px;
 }
 
 .icon--primary {
     fill: var(--primary-color); /* Only applies to svg images */
     background-color: #f3f9f8;
+}
+.icon--secondary {
+    fill: white;
 }
 
 .icon-container {
@@ -174,15 +177,15 @@ a {
 
 
 /* Variants */
-.btn-primary {background-color: var(--headings-color);}
-.btn-secondary {background-color: var(--secondary-color);}
-.btn-accent {background-color: var(--accent-color);}
+.btn--primary {background-color: var(--headings-color);}
+.btn--secondary {background-color: var(--secondary-color);}
+.btn--accent {background-color: var(--accent-color);}
 
 
-.btn-accent,.btn-primary,.btn-secondary {
+.btn--accent,.btn--primary,.btn--secondary {
     color: white;
 }
-.btn-special {
+.btn--special {
     border: 2px solid var(--headings-color);
     color: var(--headings-color);
     background-color: white;
@@ -199,3 +202,46 @@ a {
         font-size: 1.5rem;
     }
 }
+
+/* Input */
+
+input[type = "text"] {
+    font-size: 2.3rem;
+    padding: 2rem 3rem;
+    border-radius: 50px;
+    border: none;
+    outline: 0;
+}
+
+::placeholder{
+    color: #cdcbd7;
+}
+
+.input-group {
+    border-radius: 30px;
+    box-shadow: 0px 10px 20px rgb(216, 216, 216);
+    display: flex;
+}
+
+.input-group input[type="text"] {
+    border: none;
+    box-shadow:none;
+    flex-grow: 1;
+}
+
+.input-group .btn {
+    padding: 0rem 4rem 0rem 1.5rem;
+    margin: 4px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+@media screen and (min-width:1024px) {
+    input[type = "text"] {
+    font-size: 1.5rem;
+padding-bottom: 1rem;}
+}
+
+/* Card */

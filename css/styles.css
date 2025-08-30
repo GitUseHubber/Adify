@@ -156,3 +156,46 @@ a {
 .white-bg-icon {
     background-color: #f3f9f8;
 }
+
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    padding: 2.3rem 15rem;
+    border-radius: 100px;
+    text-transform:uppercase;
+    font-size: 1.9rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.5s;
+}
+
+
+/* Variants */
+.btn-primary {background-color: var(--headings-color);}
+.btn-secondary {background-color: var(--secondary-color);}
+.btn-accent {background-color: var(--accent-color);}
+
+
+.btn-accent,.btn-primary,.btn-secondary {
+    color: white;
+}
+.btn-special {
+    border: 2px solid var(--headings-color);
+    color: var(--headings-color);
+    background-color: white;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+    .btn {
+        padding: 1.5rem 3rem;
+        font-size: 1.5rem;
+    }
+}

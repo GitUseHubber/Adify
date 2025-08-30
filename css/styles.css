@@ -1,6 +1,8 @@
 /* TODO: Add responsive styles for mobile devices */
 /* FIXME: Fix header alignment issue */
-
+*,*::after,*::before {
+    box-sizing: border-box;
+}
 :root {
     --primary-color: #2584ff;
     --secondary-color: #00d9ff;
@@ -113,12 +115,15 @@ a {
 .list-tick {
     font-weight: 500;
     list-style-image: url(../images/tick.svg);
+    margin: 2rem 0;
 }
 
 .list-tick .list__item {
     padding-left: 1rem;
     font-size: 2.4rem;
     padding-bottom: 3rem;
+    letter-spacing: 1px;
+    padding-bottom: 2rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -164,19 +169,22 @@ a {
 /* Buttons */
 
 .btn {
-    display: inline-block;
     padding: 2.3rem 15rem;
     border-radius: 100px;
     text-transform:uppercase;
+    text-align: center;
     font-size: 1.9rem;
     font-weight: 600;
     border: none;
     cursor: pointer;
     transition: opacity 0.5s;
+    white-space: nowrap;
+    margin: 1rem 3rem;
 }
 
 
 /* Variants */
+.btn--block { width: 100%; display: inline-block;}
 .btn--primary {background-color: var(--headings-color);}
 .btn--secondary {background-color: var(--secondary-color);}
 .btn--accent {background-color: var(--accent-color);}
@@ -241,7 +249,98 @@ input[type = "text"] {
 @media screen and (min-width:1024px) {
     input[type = "text"] {
     font-size: 1.5rem;
-padding-bottom: 1rem;}
+    padding-bottom: 1rem;}
 }
 
-/* Card */
+/* Cards */
+.card-container {
+    display: inline-block;
+    
+}
+.card {
+    margin: 7rem 2rem;
+    box-shadow: 0 0 20px 10px rgb(225, 225, 225);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.card__header { 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.card__body,.card__header {padding: 2rem 3rem;}
+
+.card--primary .card__header {
+    background-color: var(--primary-color);
+    color: white;
+}
+.card--secondary .card__header {
+    background-color: var(--secondary-color);
+    color: white;
+}
+.card__header .badge {display: inline-block;}
+
+.card__footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card--popular 
+{position: relative;}
+
+.card--popular .card__header::before {
+    width: 40px;
+    content: url(../images/popular.svg);
+    position: absolute;
+    display: inline-block;
+    right: 5%;
+    top: -0.5%;
+}
+
+
+
+.card__footer .btn {flex-grow: 1;}
+
+.plan__price {font-size: 6rem;}
+
+.plan__billing-cycle {
+    font-size: 2.4rem;
+    font-weight: 200;
+    opacity: .8;
+    margin-right: 1rem;
+}
+
+.plan__description {
+    font-size: 2rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+.plan__name {
+    margin: 0;
+    color: white;
+    font-size: 2.4rem;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+
+.plan__name {font-size: 1.4rem;}
+
+.plan__price {font-size: 5rem;}
+
+.plan__billing-cycle {font-size: 1.6rem;}
+
+.plan__description {font-size: 1.7rem;}
+
+.card--popular {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px 10px rgb(225, 225, 225);
+}
+
+.card--popular .card__header::before {width: 30px;}
+
+}

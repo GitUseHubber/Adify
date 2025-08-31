@@ -148,10 +148,9 @@ a {
 
 .icon--primary {
     fill: var(--primary-color); /* Only applies to svg images */
-    background-color: #f3f9f8;
 }
 .icon--secondary {
-    fill: white;
+    fill: var(--primary-color)
 }
 
 .icon-container {
@@ -344,3 +343,33 @@ input[type = "text"] {
 .card--popular .card__header::before {width: 30px;}
 
 }
+
+
+/* Media elements */
+
+
+.media {
+    display: flex;
+
+}
+
+.media__image {
+    margin: 3.5rem 0 3.5rem 2rem;
+}
+
+.media__body {
+    margin: 0 2rem;
+}
+
+
+.media__image .icon {
+    width: 50px; height: 50px;
+}
+
+.media__description {
+    font-size: 2rem; 
+    font-weight: 300;
+    opacity: 0.6;
+
+}
+.media__title {font-size: 2.4rem;}

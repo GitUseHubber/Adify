@@ -424,3 +424,16 @@ input[type = "text"] {
         font-size: 1.6rem;
     }
 }
+
+/* Grids */
+
+.grid {
+    display: grid;
+}
+
+
+@media screen and (min-width: 768px) {
+    .grid--1rx2c {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}

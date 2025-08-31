@@ -10,6 +10,7 @@
     --headings-color: #1b0760;
     --body-text-color: #a195c3;
     
+    
 }
 
 /* Typography: */
@@ -373,3 +374,53 @@ input[type = "text"] {
 
 }
 .media__title {font-size: 2.4rem;}
+
+/* Quotes */
+
+.quote-container {
+    font-size: 3rem;
+    margin: 4rem;
+}
+
+.quote__message {
+    font-style: italic;
+    color: #5c5577;
+    margin:0;
+}
+
+.quote__message::before {
+    content: open-quote;
+}
+.quote__message::after {
+    content: close-quote;
+}
+
+.quote__quotee__line {
+    position: relative;
+    bottom: 10px;
+}
+
+.quote__quotee__name {
+    margin-bottom: 0;
+    font-size: 3rem;
+}
+
+.quote__quotee__organization {
+    color: var(--headings-color);
+    opacity: 0.4;
+
+}
+
+@media screen and (min-width: 1024px) {
+    .quote__message, .quote__quotee__name {
+        font-size: 2.4rem;
+    }
+
+    .quote__quotee__line {
+        bottom: 17px;
+    }
+
+    .quote__quotee__organization {
+        font-size: 1.6rem;
+    }
+}

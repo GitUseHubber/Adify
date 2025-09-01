@@ -532,3 +532,41 @@ input[type = "text"] {
     grid-template-columns: 1fr auto;
 }
 }
+
+/* Collapisble */
+
+.collapsible {
+    background-color: black;
+    color: white;
+}
+
+.collapsible__header {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+}
+
+.collapsible__heading {
+    color: inherit;
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.collapsible__chevron {
+    transform: rotate(-90deg);
+}
+.collapsible__content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__chevron {
+    transform: rotate(0);
+}
+.collapsible--expanded .collapsible__content {
+    opacity: 100%;
+    max-height: 100vh;
+}
+

@@ -484,7 +484,7 @@ input[type = "text"] {
 @media screen and (min-width: 1024px) {
 
     .testimonial {
-        max-width: 1200px;
+        max-width: 1140px;
     }
 }
 
@@ -570,3 +570,41 @@ input[type = "text"] {
     max-height: 100vh;
 }
 
+/* Blocks */
+
+.block {
+    --padding--vertical: 6rem;
+    padding: var(--padding--vertical) 2rem;
+
+}
+.block__header {
+    text-align: center;
+}
+
+.block--dark {
+    background-color: black;
+    color: #7b858b;
+}
+
+
+.block--dark .block__heading {
+    color: white;
+}
+
+.block--skewed-right {
+    padding-bottom: calc(var(--padding--vertical) + 4rem);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 82%);
+
+}
+
+.block--skewed-left {
+    padding-bottom: calc(var(--padding--vertical) + 4rem);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+}
+
+/* Usable in the whole project */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}

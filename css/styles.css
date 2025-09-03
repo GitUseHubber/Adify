@@ -733,3 +733,41 @@ input[type = "text"] {
     align-self: center;
 }
 }
+
+/* Domain Block */
+
+.domain__prices {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,6rem);
+
+    font-weight: 600;
+    justify-items: center;
+    
+}
+
+.domain__prices,.domain__prices .list__item
+{
+    padding-top: 2rem;
+    padding-left: 0;
+}
+.domain__prices .badge {
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .domain__prices {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .domain__prices::after {
+        content: "More";
+        padding-top: 1.6rem;
+    }
+    .domain__prices .badge {
+        font-size: 1.6rem;
+    }
+}
+
+/* Plan Blocks */

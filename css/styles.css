@@ -153,13 +153,18 @@ a {
 }
 .icon--secondary {
     fill: white;
-    
 }
+
+
 
 .icon-container {
     display: flex; 
     align-items: center; justify-content: center;
     width: 64px; height: 64px;
+}
+.icon-container--feature {
+    background-color: rgb(228, 228, 228);
+    border-radius: 100%;
 }
 
 .white-bg-icon {
@@ -779,8 +784,8 @@ input[type = "text"] {
     margin-top: 5rem;
 }
 
-.card, .card__header {
-    margin: 0;
+.card {
+    margin: 0 2rem;
 }
 
 .card-container:hover {
@@ -793,10 +798,53 @@ input[type = "text"] {
 }
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1140px) {
 
     .card {
         margin: 7rem 2rem;
     }
     
+}
+
+/* Features Block */
+
+
+.features img {
+    width: 100%;
+
+}
+
+.features .media {
+    display: flex;
+    flex-direction: column;
+}
+
+.features p {
+    color: black;
+    opacity: 0.6;
+}
+
+.features .media__image {
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+.features .icon {
+    width: 30px;
+    height: 30px;
+}
+.features .icon-container {
+    width: 50px;
+    height: 50px;
+}
+
+.features .learn-more {
+    margin-bottom: 5rem;
+}
+
+
+@media screen and (min-width: 768px){
+    .features:nth-last-of-type(odd) .feature__content {
+        order: 2;
+    }
 }

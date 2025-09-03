@@ -175,7 +175,7 @@ a {
 /* Buttons */
 
 .btn {
-    padding: 2.3rem 7rem;
+    padding: 2.3rem 4vw;
     border-radius: 100px;
     text-transform:uppercase;
     text-align: center;
@@ -241,6 +241,7 @@ input[type = "text"] {
     border: none;
     box-shadow:none;
     flex-grow: 1;
+    width: 0;
 }
 
 .input-group .btn {
@@ -380,8 +381,27 @@ input[type = "text"] {
     font-weight: 300;
     opacity: 0.6;
 
+
 }
+
+.media--content {
+    margin-bottom: 10rem;
+}
+
+.media--content .media__title {
+    color: white;
+}
+
 .media__title {font-size: 2.4rem;}
+
+
+@media screen and (min-width:768px) {
+    .media__title {
+        font-size: 2rem;
+    }
+
+    
+}
 
 /* Quotes */
 
@@ -601,7 +621,7 @@ input[type = "text"] {
 
 .block--skewed-right {
     padding-bottom: calc(var(--padding--vertical) + 4rem);
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 
 }
 
@@ -847,4 +867,19 @@ input[type = "text"] {
     .features:nth-last-of-type(odd) .feature__content {
         order: 2;
     }
+}
+
+/* Showcase block */
+
+.fit-image {
+    width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .block--skewed-right .grid--1rx2c {
+    grid-template-columns: 1fr 2fr;
+}
+.fit-image {
+    transform: translateY(15rem) translateX(-15rem) scale(1.1);
+    margin-left: 15rem;
+}
 }

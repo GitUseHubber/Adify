@@ -271,7 +271,9 @@ input[type = "text"] {
 }
 
 
-.card__body,.card__header {padding: 2rem 3rem;}
+.card__header {padding: 2rem 3rem;}
+
+.card__body {padding: 0 6rem 3rem 2rem;}
 
 .card--primary .card__header {
     background-color: var(--primary-color);
@@ -771,3 +773,30 @@ input[type = "text"] {
 }
 
 /* Plan Blocks */
+
+.card-container {
+    transition: transform 0.2s;
+    margin-top: 5rem;
+}
+
+.card, .card__header {
+    margin: 0;
+}
+
+.card-container:hover {
+    transform: scale(1.05);
+}
+.plan-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .card {
+        margin: 7rem 2rem;
+    }
+    
+}

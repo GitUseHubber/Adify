@@ -358,9 +358,10 @@ input[type = "text"] {
 .plan__description {font-size: 1.7rem;}
 
 .card--popular {
-    transform: scale(1.1);
+    transform: scale(1.07);
     box-shadow: 0 10px 20px 10px rgb(225, 225, 225);
 }
+
 
 .card--popular .card__header::before {width: 30px;}
 
@@ -827,16 +828,17 @@ input[type = "text"] {
 /* Plan Blocks */
 
 .card-container {
-    transition: transform 0.2s;
+    
     margin-top: 5rem;
 }
 
 .card {
     margin: 0 2rem;
+    transition: transform 0.2s;
 }
 
-.card-container:hover {
-    transform: scale(1.05);
+.card:hover {
+    transform: scale(1.1);
 }
 .plan-block {
     display: flex;

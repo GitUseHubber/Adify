@@ -24,6 +24,7 @@ body {
     line-height: 1.5;
     font-size: 2.4rem; /* 2.4rem -> 24px */
     color: var(--body-text-color);
+
 }
 
 h1, h2 , h3 {
@@ -102,6 +103,17 @@ a {
 .list {
     color: var(--headings-color);
     list-style: none;
+}
+
+.list--footer {
+    color: white;
+    opacity: 0.7;
+    margin: 0;
+    padding: 0;
+}
+
+.list--footer .list__item {
+    margin-bottom: 2rem;
 }
 
 
@@ -481,6 +493,7 @@ input[type = "text"] {
     margin: 2rem;
     text-align: center;
     box-shadow: 0 0 10px 10px rgb(227, 227, 227);
+    margin-bottom: 15rem;
 }
 
 .testimonial__image {
@@ -519,12 +532,14 @@ input[type = "text"] {
 /* Callout */
 
 .callout {
+        transform: translateY(120px);
     margin: 10px;
     border-radius: 10px;
     background-color: var(--primary-color);
     text-align: center;
     color: white;
     padding: 0 0rem 5rem 0rem;
+
 }
 
 .callout h2 {
@@ -549,7 +564,9 @@ input[type = "text"] {
 
 @media screen and (min-width: 768px) {
 
-    .callout{text-align: left;}
+    .callout{
+
+        text-align: left;}
     .callout .btn {
         justify-self: start;
     }
@@ -564,8 +581,11 @@ input[type = "text"] {
 /* Collapisble */
 
 .collapsible {
-    background-color: black;
     color: white;
+}
+
+.collapsible--header {
+    background-color: black;
 }
 
 .collapsible__header {
@@ -609,11 +629,18 @@ input[type = "text"] {
     text-align: center;
 }
 
+.block__heading {
+    margin-top: 8rem;
+}
+
 .block--dark {
     background-color: black;
     color: #7b858b;
 }
 
+.block--dark-gray {
+    background-color: #232222;
+}
 
 .block--dark .block__heading {
     color: white;
@@ -883,3 +910,103 @@ input[type = "text"] {
     margin-left: 15rem;
 }
 }
+
+
+/* Footer */
+
+.footer .collapsible__heading {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    
+}
+.footer .collapsible__header {
+    
+    padding: 2rem 1.5rem;
+    border-top: 2px solid rgb(74, 74, 74);
+
+}
+
+.footer .list__item {
+    padding: 0.5rem 1.5rem;
+}
+
+
+.footer {
+    padding: 20rem 5rem 0;
+}
+
+
+
+.footer img {
+    margin: 3rem 0;
+    width: 50vw;
+}
+
+.footer__logo-copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__logo-copyright p {
+    font-size: 2.1rem;
+    color: white;
+    opacity: .3;
+}
+
+@media screen and (min-width:768px) {
+
+    .footer .collapsible__header { 
+        border: 0;
+}
+
+    .footer .collapsible__heading {
+        font-size: 1.6rem;
+    }
+ .footer__sections {
+    grid-template-columns:  repeat(auto-fit, minmax(10rem, 1fr));
+ }
+ .footer .collapsible__chevron {
+    display: none;
+ }
+
+ .footer .collapsible__content {
+    opacity: 1;
+    max-height: 100%;
+ }
+ .footer__logo-copyright {
+    justify-content: start;
+    order: -1;
+    text-align: center;
+ }
+ .footer__logo-copyright img {
+    margin-top: 0;
+    width: 100%;
+
+
+ }
+ .footer {
+    padding: 20rem 0 10rem 0;
+ }
+
+}
+
+
+
+/* Container Special */
+    .container-special {
+        max-width: 1140px;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+
+@media screen and (min-width: 768px) {
+    .container-special {
+        max-width: 100%;
+        margin: 0;
+        overflow: auto;
+    }
+}
+

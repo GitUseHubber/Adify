@@ -5,7 +5,7 @@ A responsive, pure front-end website (landing page) built as my first web app us
 ## Live Demo
 
 You can open the site here:
-- https://adifyy.netlify.app/
+- https://adifyy.netlify.app/ (a bit broken on Netlify)
 
 ## What’s Inside
 

@@ -12,6 +12,7 @@ You can open the site here:
 - Responsive layout (works on desktop, tablet, and mobile)
 - Modern landing-page sections (hero, pricing, features, testimonial, CTA, footer)
 - Light front-end functionality with JavaScript (no backend)
+- Super Fast
 
 ## Tech Stack
 
@@ -28,15 +29,17 @@ You can open the site here:
 
 Your browser will open automatically and the site will run locally.
 
-## Project Structure (example)
-├─ index.html
-├─ css/
-│ └─ style.css
-│ └─ normalize.css
-├─ js/
-│ └─ main.js
-├─ images/
-└─ components/
+## Project Structure
+```text
+├── index.html
+├── css/
+│   ├── style.css
+│   └── normalize.css
+├── js/
+│   └── main.js
+├── images/
+└── components/   # lots of HTML files (sections/blocks)
+```
 
 ## Deployment
 
@@ -52,9 +55,4 @@ This project uses a `components/` folder that contains **multiple HTML files** (
 
 **Mohamed Adil Sadqui**
 
-## License
-
-This project is open-source for learning and portfolio use. If you want, add a proper license file (MIT is common for personal projects).
-
-Your structure may vary, but a typical setup looks like this:
 

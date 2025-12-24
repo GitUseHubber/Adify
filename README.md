@@ -19,21 +19,15 @@ You can open the site here:
 - CSS3
 - JavaScript (Vanilla)
 
-## Run Locally
+## Run Locally (Recommended)
 
 1. Open the project folder in **VS Code**
-2. Install the **Live Server** extension
-   - Press `Ctrl + P`
-   - Paste:
-     ```
-     ext install ritwickdey.liveserver
-     ```
-3. Open `index.html`, then start the server
-   - Click **Go Live** in the VS Code status bar  
-   **or**
-   - Right-click `index.html` -> **Open with Live Server**
+2. Install the **Live Server** extension (from the VS Code Extensions tab)
+3. In the Explorer, **left-click** `index.html`
+4. **Right-click** `index.html` -> **Open with Live Server**
 
-A browser tab will open automatically with your local site (usually something like `http://127.0.0.1:5500/`).
+Your browser will open automatically and the site will run locally.
+
 ## Project Structure (example)
 ├─ index.html
 ├─ css/

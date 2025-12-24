@@ -21,39 +21,19 @@ You can open the site here:
 
 ## Run Locally
 
-### Option 1 (Recommended): Live Server++ (smoothest)
-
-Live Server++ is “truly live”, meaning it can refresh without you manually saving every time and feels smoother while building front-end projects.
-
-1. Open this project folder in **VS Code**
-2. Install **Live Server++**
-   - Press `Ctrl + P`
-   - Paste:
-     ```
-     ext install ritwickdey.vscode-live-server-plus-plus
-     ```
-3. Start the server
-   - Click **Go Live++** in the VS Code status bar  
-   **or**
-   - Press `Ctrl + Shift + P` and run:
-     - `Live Server++: Open Server`
-
-Your browser will open automatically. If not, open the local address shown by the extension (usually `http://127.0.0.1:PORT`).
-
-### Option 2: Live Server (classic)
-
-1. Install **Live Server**
+1. Open the project folder in **VS Code**
+2. Install the **Live Server** extension
    - Press `Ctrl + P`
    - Paste:
      ```
      ext install ritwickdey.liveserver
      ```
-2. Start it
-   - Open `index.html`
-   - Click **Go Live** in the status bar  
+3. Open `index.html`, then start the server
+   - Click **Go Live** in the VS Code status bar  
    **or**
-   - Right-click `index.html` in the explorer -> **Open with Live Server**
+   - Right-click `index.html` -> **Open with Live Server**
 
+A browser tab will open automatically with your local site (usually something like `http://127.0.0.1:5500/`).
 ## Project Structure (example)
 ├─ index.html
 ├─ css/
